@@ -1,0 +1,35 @@
+/* 清晰分册与册页留白 */
+.chapter-nav{display:flex;align-items:center;gap:4px;padding:4px;border:1px solid #c6c8bc;background:#e8e6dc}
+.chapter-nav a{padding:8px 15px;border:1px solid transparent;color:#777e75;text-decoration:none;font-size:11px;letter-spacing:.12em}
+.chapter-nav a.current{border-color:#9bad9f;background:#f0eee6;color:#35534c}
+.explore-heading{padding-top:20px;padding-bottom:18px}
+.explore-heading h2{margin:8px 0 0;font-size:27px}
+.workspace{gap:13px;min-height:calc(100vh - 190px);padding-top:12px;padding-bottom:12px}
+.control-panel,.detail-panel{border:1px solid #d0d0c5;background:#e8e6dc;padding:18px 16px}
+.viz-area{margin:0 2px;border:1px solid #d0d0c5;background:#f0eee6}
+.network-wrap{background:radial-gradient(ellipse at center,rgba(197,211,199,.42),transparent 68%),repeating-linear-gradient(0deg,transparent 0 35px,rgba(117,142,128,.035) 36px)}
+.index-jump{display:block;margin-top:12px;padding:11px 9px;border:1px solid #a9b5a8;color:#47675f;text-decoration:none;font-size:10px;letter-spacing:.08em}
+.index-jump b{float:right}
+.index-page{background:#e9e6dc}
+.index-heading{min-height:96px}
+.index-search{display:flex;align-items:center;gap:10px;width:min(330px,40vw);padding:10px 12px;border:1px solid #adb9ae;background:#f0eee6;color:#638078}
+.index-search span{font-size:20px}
+.index-search input{width:100%;border:0;outline:0;background:transparent;color:var(--ink);font:12px var(--serif)}
+.index-layout{display:grid;grid-template-columns:minmax(500px,1fr) 280px;gap:14px;min-height:calc(100vh - 194px);padding:14px 6.4vw}
+.index-sheet{display:flex;min-width:0;flex-direction:column;border:1px solid #d0d0c5;background:#f0eee6}
+.list-column-head{display:grid;grid-template-columns:68px 1fr 1fr 64px;gap:12px;padding:15px 20px 12px;border-bottom:1px solid #c9cabe;color:#758178;font-size:10px;letter-spacing:.13em}
+.index-sheet .list-view{max-height:none;flex:1;padding:0 12px 15px}
+.index-sheet .list-row{grid-template-columns:68px 1fr 1fr 64px;gap:12px;padding:13px 8px}
+.index-sheet .list-row:nth-child(odd){background:rgba(219,223,212,.24)}
+.index-detail{position:relative!important;inset:auto!important;width:auto!important;transform:none!important;box-shadow:none!important;min-height:390px}
+.index-detail .detail-empty{min-height:300px}
+.explore-footer{margin-top:0}
+.home-page{background:radial-gradient(ellipse at 72% 52%,#dce2d8 0,#e9e6dc 45%,#e9e6dc 76%)}
+.home-page .hero{max-width:none;grid-template-columns:.8fr 1.1fr;padding-right:10vw;padding-left:13vw}
+.home-page .hero-copy{padding-left:30px;border-left:1px solid #b9c2b6}
+.home-page .hero h1{font-size:clamp(54px,6.6vw,86px)}
+.home-page .hero-note{margin-top:50px}
+.home-page .hero-art{height:min(73vh,700px)}
+.home-page .home-footer{margin-right:7vw;margin-left:7vw}
+@media(max-width:1000px){.index-layout{grid-template-columns:minmax(0,1fr)}.index-detail{position:fixed!important;top:72px!important;right:0!important;bottom:0!important;z-index:12!important;display:block!important;width:min(320px,90vw)!important;transform:translateX(105%)!important;transition:.25s;background:#eeece4!important}.index-detail.open{transform:translateX(0)!important}.index-sheet .list-row,.list-column-head{grid-template-columns:55px 1fr 1fr 45px}.workspace{gap:8px}.chapter-nav a{padding:8px 10px}}
+@media(max-width:700px){.chapter-nav{gap:0}.chapter-nav a{padding:7px;font-size:9px}.explore-heading h2{font-size:23px}.workspace{padding:8px 4vw}.control-panel,.viz-area{border:1px solid #d0d0c5}.index-layout{min-height:calc(100vh - 175px);padding:10px 4vw}.index-heading{display:flex;align-items:center;gap:14px}.index-search{width:48vw}.index-sheet .list-row,.list-column-head{grid-template-columns:48px 1fr 1fr;gap:5px;padding-right:8px;padding-left:8px}.list-column-head span:last-child,.index-sheet .list-row .author-cell{display:none}.index-detail{top:0!important}.home-page .hero{display:flex;flex-direction:column;padding:20px 7vw}.home-page .hero-art{order:0;min-height:300px;height:45vh;margin:0 -5vw}.home-page .hero-copy{order:1;padding-left:17px}.home-page .hero h1{margin:10px 0;font-size:44px}.home-page .hero-note{margin-top:18px}.home-page .enter-button{margin-top:15px}}
